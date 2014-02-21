@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="page_BackgroundColor">#1E8AE4</color>
+    <color name="page_HeaderBackgroundColor">#54AAF2</color>
+    <color name="textColor_default">#FFFFFF</color>
+</resources>

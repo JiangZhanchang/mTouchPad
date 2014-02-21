@@ -3,11 +3,97 @@
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
+              android:background="@color/page_BackgroundColor"
         >
-    <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Hello World, WelcomePage"
-            />
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/page_HeaderBackgroundColor">
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginLeft="15dp"
+                      android:layout_marginBottom="5dp">
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/tails_welcome"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Welcome to mTouch Pad."
+                      android:textSize="@dimen/textSize_Big"
+                      android:textColor="@color/textColor_default"
+                      android:layout_marginLeft="@dimen/marginValue_big"
+                      android:layout_gravity="bottom"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="5dp"
+                  android:background="@drawable/rectangle"
+                  android:orientation="vertical"/>
+
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/textSize_Big"
+              android:text="Connect to a server over Wifi"
+              android:textColor="@color/textColor_default"
+              android:layout_marginLeft="@dimen/marginValue_big"
+              android:layout_marginTop="@dimen/marginValue_big"/>
+
+    <Button android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btn_SearchServers"
+            android:layout_marginLeft="@dimen/marginValue_big"
+            android:layout_marginTop="@dimen/marginValue_middle"
+            style="@style/btnOpacityStyle"
+            android:text="Search"
+            android:textSize="@dimen/textSize_Big"
+            android:layout_marginRight="@dimen/marginValue_big"/>
+
+    <ListView android:layout_width="fill_parent"
+              android:layout_height="0dp"
+              android:layout_weight="4"
+              android:id="@+id/list_ServerList"
+              android:layout_marginLeft="@dimen/marginValue_big"
+              android:layout_marginRight="@dimen/marginValue_big"
+              android:layout_marginTop="@dimen/marginValue_middle"
+              android:background="#20a1a1f4"/>
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="5dp"
+                  android:layout_marginTop="@dimen/marginValue_middle"
+                  android:background="@drawable/rectangle">
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginTop="@dimen/marginValue_middle"
+                  android:layout_marginLeft="@dimen/marginValue_big"
+                  android:layout_marginBottom="@dimen/marginValue_little">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_marginBottom="@dimen/marginValue_little"
+                      android:layout_marginRight="@dimen/marginValue_big"
+                      android:layout_marginTop="@dimen/marginValue_middle">
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/mtouchpad_logo"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:textSize="@dimen/textSize_Middle"
+                      android:text="mTouch Pad ® v1.0 by Eric Jiang"
+                      android:textColor="@color/textColor_default"
+                      android:layout_marginLeft="@dimen/marginValue_middle"
+                      android:layout_gravity="bottom"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
 </LinearLayout>
 
