@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/marginValue_big"
+              android:padding="@dimen/marginValue_middle">
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/list_Server_PcName"
+              android:layout_marginLeft="@dimen/marginValue_middle"
+              android:textColor="@color/textColor_default"
+              android:gravity="center_vertical"
+              android:textSize="@dimen/textSize_Big"
+              android:layout_weight="1"/>
+    <Button android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:id="@+id/btn_Connect"
+            android:onClick="btn_ConnectClicked"
+            style="@style/btnOpacityStyle"
+            android:layout_marginRight="0dp"
+            android:text="Connect"
+            android:textSize="10dp"
+            android:gravity="center"/>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item xmlns:android="http://schemas.android.com/apk/res/android">
+        <rotate xmlns:android="http://schemas.android.com/apk/res/android" android:fromDegrees="45"
+                android:toDegrees="90" android:pivotX="10" android:pivotY="20">
+            <shape android:shape="rectangle" android:thickness="5dp"
+                   xmlns:android="http://schemas.android.com/apk/res/android">
+                <size android:height="2dp" android:width="12dp"/>
+                <stroke android:color="#ff0000"/>
+                <solid android:color="#00ff00"/>
+                <corners
+                        android:radius="1dp"/>
+                <padding android:left="10dp" android:right="10dp"/>
+
+            </shape>
+        </rotate>
+    </item>
+
+</selector>
